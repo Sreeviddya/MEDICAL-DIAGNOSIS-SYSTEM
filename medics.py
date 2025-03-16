@@ -64,9 +64,9 @@ st.set_page_config(page_title="Smart Disease Prediction", page_icon="🩺", layo
 st.markdown(
     """
     <style>
-    /* Global Background - Gradient White to Light Blue */
+    /* Global Background - Solid Light Blue */
     body, .main, .block-container {
-        background: linear-gradient(to right, #FFFFFF, #ADD8E6) !important;
+        background-color: #ADD8E6 !important; /* Light Blue */
         color: black !important;
     }
 
@@ -100,14 +100,14 @@ st.markdown(
         font-weight: bold;
     }
 
-    /* Headers & Important Text - Light Blue */
+    /* Headers & Important Text - Darker Blue */
     h1, h2, h3, h4, h5, h6, strong {
-        color: #0056b3 !important;
+        color: #003f7f !important;
     }
 
-    /* Labels for Inputs (Age, BMI, etc.) - Light Blue */
+    /* Labels for Inputs (Age, BMI, etc.) - Dark Blue */
     label {
-        color: #0056b3 !important;
+        color: #003f7f !important;
         font-weight: bold;
     }
 
@@ -133,6 +133,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 # Sidebar Navigation
