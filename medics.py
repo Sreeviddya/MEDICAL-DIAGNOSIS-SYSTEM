@@ -64,71 +64,10 @@ st.set_page_config(page_title="Smart Disease Prediction", page_icon="🩺", layo
 st.markdown(
     """
     <style>
-    /* Global Background - Solid Light Blue */
-    body, .main, .block-container {
-        background-color: #ADD8E6 !important; /* Light Blue */
-        color: black !important;
-    }
-
-    /* Sidebar - Dark Blue */
-    [data-testid="stSidebar"] {
-        background-color: #0077B6 !important;
-        color: white !important;
-    }
-    [data-testid="stSidebar"] * {
-        color: white !important;
-    }
-
-    /* Buttons - Blue with Hover Effect */
-    .stButton>button {
-        background-color: #0056b3 !important;
-        color: white !important;
-        border-radius: 10px;
-        font-size: 16px;
-        padding: 10px;
-        margin: 5px;
-        border: none;
-        transition: 0.3s;
-    }
-    .stButton>button:hover {
-        background-color: #003f7f !important;
-    }
-
-    /* Selection Tabs (Radio, Dropdown, etc.) - Blue Text */
-    .stRadio label, .stSelectbox label, .stMultiSelect label {
-        color: #0056b3 !important;
-        font-weight: bold;
-    }
-
-    /* Headers & Important Text - Darker Blue */
-    h1, h2, h3, h4, h5, h6, strong {
-        color: #003f7f !important;
-    }
-
-    /* Labels for Inputs (Age, BMI, etc.) - Dark Blue */
-    label {
-        color: #003f7f !important;
-        font-weight: bold;
-    }
-
-    /* Prediction Answer Panel - More Visible Green */
-    .stAlert {
-        background-color: #28A745 !important;  /* Brighter Green */
-        color: white !important;
-        border-radius: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 15px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Text Inputs & Dropdowns - Stylish Borders */
-    .stTextInput>div>div>input, .stSelectbox>div>div>select {
-        border: 2px solid #0077B6 !important;
-        border-radius: 5px;
-        padding: 5px;
-    }
-
+    body { background-color: #C8E6C9; color: black; }
+    .main { background-color: #C8E6C9; color: black; }
+    .stButton>button { background-color: #1B5E20; color: white; border-radius: 10px; font-size: 16px; }
+    .css-1d391kg { background-color: #D2B48C !important; } /* Light brown sidebar */
     </style>
     """,
     unsafe_allow_html=True
