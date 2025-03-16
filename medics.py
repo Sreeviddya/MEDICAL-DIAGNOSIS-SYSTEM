@@ -62,36 +62,44 @@ def predict_disease(selected_symptoms):
 st.set_page_config(page_title="Smart Disease Prediction", page_icon="🩺", layout="wide")
 
 # Custom CSS for Styling
-st.markdown(
-    """
-    <style>
-    body { background-color: white; color: black; }
-    .main { background-color: white; color: black; }
-    .stButton>button { 
-        background-color: #007BFF; 
-        color: white; 
-        border-radius: 10px; 
-        font-size: 16px; 
-        padding: 10px; 
-        margin: 5px; 
-        border: none; 
-        transition: 0.3s; 
-    }
-    .stButton>button:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
-    [data-testid="stSidebar"] {
-        background-color: #0077B6;
-        color: white;
-    }
-    [data-testid="stSidebar"] .stButton>button {
-        background-color: white; 
-        color: black;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+import streamlit as st
+
+# Apply Custom CSS
+def apply_custom_css():
+    st.markdown(
+        """
+        <style>
+        body { background-color: white; color: black; }
+        .main { background-color: white; color: black; }
+        
+        /* Sidebar */
+        [data-testid="stSidebar"] {
+            background-color: #0077B6 !important;
+            color: white !important;
+        }
+
+        /* Main Buttons */
+        .stButton>button { 
+            background-color: #007BFF !important; 
+            color: white !important; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            padding: 10px; 
+            margin: 5px; 
+            border: none; 
+            transition: 0.3s; 
+        }
+        .stButton>button:hover {
+            background-color: #0056b3 !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Call CSS Function
+apply_custom_css()
+
 
 # Sidebar Navigation
 st.sidebar.title("🎯 Check-Up Corner")
