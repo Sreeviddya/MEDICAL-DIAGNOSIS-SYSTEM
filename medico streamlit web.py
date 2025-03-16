@@ -46,17 +46,37 @@ def predict_disease(selected_symptoms):
 # Streamlit UI Setup
 st.set_page_config(page_title="Smart Disease Prediction", page_icon="🩺", layout="wide")
 
-# CSS for Styling
 st.markdown(
     """
     <style>
-    body { background-color: #C8E6C9; color: black; }
-    .main { background-color: #C8E6C9; color: black; }
-    .stButton>button { background-color: #1B5E20; color: white; border-radius: 10px; font-size: 16px; padding: 10px; margin: 5px; }
+    body { background-color: white; color: black; }
+    .main { background-color: white; color: black; }
+    .stButton>button { 
+        background-color: #007BFF; 
+        color: white; 
+        border-radius: 10px; 
+        font-size: 16px; 
+        padding: 10px; 
+        margin: 5px; 
+        border: none; 
+        transition: 0.3s; 
+    }
+    .stButton>button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    [data-testid="stSidebar"] {
+        background-color: #0077B6;
+        color: white;
+    }
+    [data-testid="stSidebar"] .stButton>button {
+        background-color: white; 
+        color: black;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Sidebar Navigation
 page = st.sidebar.radio("Navigation", ["Home", "About", "Symptoms Guide", "Contact", "FAQ", "Health Tips", "Emergency"])
