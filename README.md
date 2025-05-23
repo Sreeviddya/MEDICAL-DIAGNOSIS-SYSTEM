@@ -6,8 +6,6 @@
 **Smart Disease Prediction** is an **AI-powered** web application designed to assist users in identifying potential diseases based on their symptoms. By leveraging **Machine Learning**, the app analyzes user inputs and provides **accurate disease predictions**, along with recommendations on **precautions, medications, diet, and workouts**.
 
 This project is aimed at making **healthcare more accessible** by providing users with a **quick, intelligent, and interactive** diagnostic experience.
-
-## ✨ Features
 - 🌡️ **Symptom-based disease prediction** using a trained **ML model**.
 - 🎨 **User-friendly & colorful UI** designed for an engaging experience.
 - 🔍 **Flexible symptom input** (users can enter varying numbers of symptoms).
